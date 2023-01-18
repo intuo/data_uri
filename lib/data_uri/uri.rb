@@ -1,5 +1,8 @@
 module URI
-
+  
+  cattr_accessor :schemes
+  @@schemes = {}
+  
   class Data < Generic
 
     COMPONENT = [:scheme, :opaque].freeze
